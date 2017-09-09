@@ -49,7 +49,7 @@ Now install the development dependencies:
 ### 5. Implement your fix or feature
 
 At this point, you're ready to make your changes! Feel free to ask for help;
-everyone is a beginner at first :smile_cat:
+everyone is a beginner at first.
 
 ### 6. View your changes with goElectron application
 
@@ -77,7 +77,7 @@ git push --set-upstream origin 325-add-japanese-translations
 
 Finally, go to GitHub and
 [make a Pull Request](https://help.github.com/articles/creating-a-pull-request)
-:D
+
 
 Travis CI will run our test suite against all supported go versions. We care
 about quality, so your PR won't be merged until all tests pass. It's unlikely,
