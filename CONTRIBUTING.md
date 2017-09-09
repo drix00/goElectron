@@ -6,7 +6,7 @@ like you that make goElectron such a great tool.
 ### 1. Where do I go from here?
 
 If you've noticed a bug or have a question that doesn't belong on the
-[search the issue tracker](https://github.com/drix00/goElectron/issues?q=something)
+[search the issue tracker](https://github.com/drix00/goElectron/issues?q=)
 to see if someone else in the community has already created a ticket.
 If not, go ahead and [make one](https://github.com/drix00/goElectron/issues/new)!
 
@@ -31,7 +31,7 @@ Now install the development dependencies:
 ### 4. Did you find a bug?
 
 * **Ensure the bug was not already reported** by [searching all
-  issues](https://github.com/drix00/goElectron?q=).
+  issues](https://github.com/drix00/goElectron/issues?q=).
 
 * If you're unable to find an open issue addressing the problem, [open a new
   one](https://github.com/drix00/goElectron/issues/new).  Be sure to
