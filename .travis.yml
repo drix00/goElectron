@@ -8,11 +8,7 @@ go:
   - stable
   - master
 
-install:
+script:
   - go get github.com/llgcode/draw2d/draw2dimg
   - go get github.com/drix00/goElectron
-
-
-before_install:
-  - cp .netrc ~
-  - chmod 600 .netrc
+  - go test -v ./...
