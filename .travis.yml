@@ -11,3 +11,4 @@ go:
 
 install:
   - go get github.com/llgcode/draw2d/draw2dimg
+  - go get github.com/drix00/goElectron
