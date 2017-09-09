@@ -10,7 +10,7 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/goElectron/utils/display"
+	"github.com/drix00/goElectron/utils/display"
 )
 
 const (
