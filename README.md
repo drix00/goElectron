@@ -34,8 +34,13 @@ Pull requests are very much welcomed.  Create your pull request on a non-master
 branch, make sure a test or example is included that covers your change and
 your commits represent coherent changes that include a reason for the change.
 
+See [CONTRIBUTING](CONTRIBUTING.md) file for details.
 
 Thanks to the [community of contributors](https://github.com/drix00/goElectron/graphs/contributors).
+
+## Code of Conduct
+
+This project promote a healthy, constructive community behavior, see [CODE_OF_CONDUCT](CODE_OF_CONDUCT.md) file for details.
 
 ## External packages
 
@@ -43,4 +48,4 @@ Thanks to the [community of contributors](https://github.com/drix00/goElectron/g
 
 ## License
 
-goElectron is distributed under the Apache License, Version 2.0, see LICENSE file for details.
+goElectron is distributed under the Apache License, Version 2.0, see [LICENSE](LICENSE) file for details.
