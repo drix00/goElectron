@@ -1,0 +1,13 @@
+language: go
+
+go:
+  - 1.6
+  - 1.7
+  - 1.8
+  - 1.9
+  - 1.x
+  - stable
+  - master
+
+install:
+  - go get github.com/llgcode/draw2d/draw2dimg
