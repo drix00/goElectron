@@ -9,8 +9,8 @@ import (
 type StoppingPowerModel uint
 
 const (
-	BetheJoyLuo1989 StoppingPowerModel = iota
-	Bethe1930 StoppingPowerModel = iota
+	BetheJoyLuo1989         StoppingPowerModel = iota
+	Bethe1930               StoppingPowerModel = iota
 	BetheRaoSahibWittry1974 StoppingPowerModel = iota
 )
 
@@ -18,11 +18,11 @@ const (
 func StoppingPower(energy float64, inputData input.InputData, model StoppingPowerModel) float64 {
 	switch model {
 	case BetheJoyLuo1989:
-			return StoppingPowerBetheJoyLuo1989(energy, inputData)
+		return StoppingPowerBetheJoyLuo1989(energy, inputData)
 	case Bethe1930:
-			return StoppingPowerBethe1930(energy, inputData)
+		return StoppingPowerBethe1930(energy, inputData)
 	case BetheRaoSahibWittry1974:
-			return StoppingPowerBethe1930(energy, inputData)
+		return StoppingPowerBethe1930(energy, inputData)
 	default:
 		return StoppingPowerBetheJoyLuo1989(energy, inputData)
 	}

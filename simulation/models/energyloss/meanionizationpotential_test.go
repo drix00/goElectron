@@ -6,13 +6,13 @@ import "testing"
 // Test with model and date from Joy Monte Carlo book.
 func TestMeanIonizationPotential_keV(t *testing.T) {
 	var values = []struct {
-		Z int
+		Z     int
 		J_keV float64
-	} {
-		{1, 0.068260,},
-		{3, 0.076759,},
-		{14, 0.172072,},
-		{79, 0.796544,},
+	}{
+		{1, 0.068260},
+		{3, 0.076759},
+		{14, 0.172072},
+		{79, 0.796544},
 	}
 
 	for _, valueRef := range values {
@@ -25,7 +25,7 @@ func TestMeanIonizationPotential_keV(t *testing.T) {
 }
 
 func floatEquals(a float64, b float64, epsilon float64) bool {
-	if (a - b) < epsilon && (b - a) < epsilon {
+	if (a-b) < epsilon && (b-a) < epsilon {
 		return true
 	}
 	return false

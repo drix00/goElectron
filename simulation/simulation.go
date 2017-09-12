@@ -7,9 +7,9 @@ import (
 	"time"
 
 	"github.com/drix00/goElectron/simulation/input"
+	"github.com/drix00/goElectron/simulation/models/energyloss"
 	"github.com/drix00/goElectron/simulation/results"
 	"github.com/drix00/goElectron/utils/display"
-	"github.com/drix00/goElectron/simulation/models/energyloss"
 )
 
 const (
@@ -284,7 +284,7 @@ func showTrajectoryNumbers(trajectoryID int, inputData input.InputData) {
 }
 
 // Display BSE coefficient on thermometer scale.
-func computeBseCoefficient(inputData input.InputData) (float64) {
+func computeBseCoefficient(inputData input.InputData) float64 {
 	bseCoefficient := float64(bkSct) / float64(inputData.NumberTrajectories)
 	return bseCoefficient
 }

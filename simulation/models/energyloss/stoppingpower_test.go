@@ -1,8 +1,8 @@
 package energyloss
 
 import (
-	"testing"
 	"github.com/drix00/goElectron/simulation/input"
+	"testing"
 )
 
 func BenchmarkStoppingPowerWithBetheJoyLuo1989(b *testing.B) {
@@ -10,7 +10,7 @@ func BenchmarkStoppingPowerWithBetheJoyLuo1989(b *testing.B) {
 	energy_keV := 20.0
 	b.ResetTimer()
 
-	for i :=0 ; i<b.N; i++ {
+	for i := 0; i < b.N; i++ {
 		StoppingPower(energy_keV, inputData, BetheJoyLuo1989)
 	}
 }
@@ -20,7 +20,7 @@ func BenchmarkStoppingPowerWithBethe1930(b *testing.B) {
 	energy_keV := 20.0
 	b.ResetTimer()
 
-	for i :=0 ; i<b.N; i++ {
+	for i := 0; i < b.N; i++ {
 		StoppingPower(energy_keV, inputData, Bethe1930)
 	}
 }
@@ -30,7 +30,7 @@ func BenchmarkStoppingPowerWithBetheRaoSahibWittry1974(b *testing.B) {
 	energy_keV := 20.0
 	b.ResetTimer()
 
-	for i :=0 ; i<b.N; i++ {
+	for i := 0; i < b.N; i++ {
 		StoppingPower(energy_keV, inputData, BetheRaoSahibWittry1974)
 	}
 }
@@ -40,7 +40,7 @@ func BenchmarkStoppingPowerBetheJoyLuo1989(b *testing.B) {
 	energy_keV := 20.0
 	b.ResetTimer()
 
-	for i :=0 ; i<b.N; i++ {
+	for i := 0; i < b.N; i++ {
 		StoppingPowerBetheJoyLuo1989(energy_keV, inputData)
 	}
 }
@@ -50,7 +50,7 @@ func BenchmarkStoppingPowerBethe1930(b *testing.B) {
 	energy_keV := 20.0
 	b.ResetTimer()
 
-	for i :=0 ; i<b.N; i++ {
+	for i := 0; i < b.N; i++ {
 		StoppingPowerBethe1930(energy_keV, inputData)
 	}
 }
@@ -60,8 +60,7 @@ func BenchmarkStoppingPowerBetheRaoSahibWittry1974(b *testing.B) {
 	energy_keV := 20.0
 	b.ResetTimer()
 
-	for i :=0 ; i<b.N; i++ {
+	for i := 0; i < b.N; i++ {
 		StoppingPowerBetheRaoSahibWittry1974(energy_keV, inputData)
 	}
 }
-

@@ -37,8 +37,8 @@ func NewDisplayTrajectory(pixelSize int, size float64) DisplayTrajectory {
 
 func (dt DisplayTrajectory) DrawStepXY(position Step, newStep Step) {
 	// Draw a closed shape
-	dt.gc.MoveTo(float64(dt.pixelSize)/2.0 + position.X/dt.size*float64(dt.pixelSize), float64(dt.pixelSize)/2.0+position.Y/dt.size*float64(dt.pixelSize))
-	dt.gc.LineTo(float64(dt.pixelSize)/2.0 + (position.X+newStep.X)/dt.size*float64(dt.pixelSize), float64(dt.pixelSize)/2.0 + (position.Y+newStep.Y)/dt.size*float64(dt.pixelSize))
+	dt.gc.MoveTo(float64(dt.pixelSize)/2.0+position.X/dt.size*float64(dt.pixelSize), float64(dt.pixelSize)/2.0+position.Y/dt.size*float64(dt.pixelSize))
+	dt.gc.LineTo(float64(dt.pixelSize)/2.0+(position.X+newStep.X)/dt.size*float64(dt.pixelSize), float64(dt.pixelSize)/2.0+(position.Y+newStep.Y)/dt.size*float64(dt.pixelSize))
 	dt.gc.FillStroke()
 }
 
