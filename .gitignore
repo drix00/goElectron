@@ -15,3 +15,6 @@
 
 # PyCharm project files.
 .idea/
+
+# Ignore image file.
+*.png
