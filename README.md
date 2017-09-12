@@ -21,12 +21,20 @@ please file an issue.-->
 
 ## Documentation
 
-<!--Use [Godoc documentation](http://godoc.org/github.com/streadway/amqp) for
+Use [Godoc documentation](https://godoc.org/github.com/drix00/goElectron) for
 reference and usage.
 
-[RabbitMQ tutorials in
-Go](https://github.com/rabbitmq/rabbitmq-tutorials/tree/master/go) are also
-available.-->
+## Testing
+
+To run all project unit test:
+```sh
+go test -v ./...
+```
+
+To run all project unit test and get the coverage:
+```sh
+go test -cover -v ./...
+```
 
 ## Contributing
 
