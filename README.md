@@ -36,6 +36,11 @@ To run all project unit test and get the coverage:
 go test -cover -v ./...
 ```
 
+To run all benchmarks:
+```sh
+go test -v -run="none" -bench=. -benchtime="3s" -benchmem ./...
+```
+
 ## Contributing
 
 Pull requests are very much welcomed.  Create your pull request on a non-master
