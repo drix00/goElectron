@@ -1,7 +1,6 @@
 package simulation
 
 import (
-	"fmt"
 	"testing"
 
 	"github.com/drix00/goElectron/simulation/input"
@@ -26,13 +25,16 @@ func TestZeroCounters(t *testing.T) {
 }
 
 func TestCarbon10keV(t *testing.T) {
+	const BseCoefficientRef = 0.061714
 	inputData := input.InputData{6, 12.011, 2.62, 10.0, 1.0e10, 10000, 0.0}
 	inputData.MeanIonizationPotential_keV = energyloss.MeanIonizationPotential_keV(inputData.AtomicNumber)
 
 	results := ComputeSimulation(inputData)
 
-	valueString := fmt.Sprintf("%.2f", results.BseCoefficient)
-	if valueString != "0.06" {
-		t.Fatalf("BSE coefficient is not correct (0.0634), got %f", results.BseCoefficient)
+	bseError := results.GetBseError(inputData.NumberTrajectories)
+
+	if results.BseCoefficient < BseCoefficientRef - 3.0*bseError || results.BseCoefficient > BseCoefficientRef + 3.0*bseError {
+		t.Fatalf("BSE coefficient is not correct (%f), got %f", BseCoefficientRef, results.BseCoefficient)
+
 	}
 }
