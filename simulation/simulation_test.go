@@ -33,8 +33,7 @@ func TestCarbon10keV(t *testing.T) {
 
 	bseError := results.GetBseError(inputData.NumberTrajectories)
 
-	if results.BseCoefficient < BseCoefficientRef - 3.0*bseError || results.BseCoefficient > BseCoefficientRef + 3.0*bseError {
+	if results.BseCoefficient < BseCoefficientRef-3.0*bseError || results.BseCoefficient > BseCoefficientRef+3.0*bseError {
 		t.Fatalf("BSE coefficient is not correct (%f), got %f", BseCoefficientRef, results.BseCoefficient)
-
 	}
 }
